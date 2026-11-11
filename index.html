@@ -185,11 +185,11 @@ summary{cursor:pointer;line-height:1.8}pre{white-space:pre-wrap;overflow-wrap:an
 @media print{body{background:white;color:#17251b}.card{box-shadow:none;border:1px solid #ccc}.topbar,.tabs{box-shadow:none}}
 
 body:has(#authView:not(.hide)){background:#edf7ef}.wrap:has(#authView:not(.hide)){padding:0}
-#authView{max-width:500px;margin:auto;color:#124e32;padding-bottom:clamp(62px,10vh,90px);background:#eaf6ed url(foot.jpg) bottom center/100% auto no-repeat;min-height:100vh}.hero{display:block;width:100%}
+#authView{max-width:500px;margin:auto;color:#124e32;padding-bottom:clamp(62px,10vh,90px);background:#eaf6ed url(mobile-hills.jpg) bottom center/100% auto no-repeat;min-height:100vh}.hero{display:block;width:100%}
 .roles{display:flex;margin:5px 8% 12px;background:#fff;border-radius:100px;padding:5px;box-shadow:0 4px 12px #185c3517}.roles[hidden]{display:none}
 .roles button,.link,.peek{color:#12653e;background:transparent;margin:0}.roles button{border-radius:80px;padding:10px 4px}.roles [aria-pressed=true],#authView .primary,#regBox>button:not(.link){background:linear-gradient(115deg,#209450,#0d653e);color:white}
 #authView .card{background:white;margin:0 5%;padding:5%;border-radius:24px;box-shadow:0 9px 26px #12653e17}#authView input,#authView select,#authView option{background:white;color:#234c37;border-color:#cfdfd5}#authView label,#authView h2,#authView .sub{color:#235f40!important}
-.field{display:flex;align-items:center;gap:8px;border:1px solid #cbdfd2;padding:0 12px;border-radius:12px;margin:0 0 12px}.field:focus-within{outline:2px solid #539970}.field span{font-size:23px}.field input{border:0;min-width:0;padding:13px 4px}.field .peek{width:auto;padding:8px;font-size:12px}.primary{border-radius:40px}.link{margin-top:7px}.identity{display:flex;align-items:center;gap:10px}.identity img{width:56px;border-radius:15px}.identity small{color:#46644e}
+.field{display:flex;align-items:center;gap:8px;border:1px solid #cbdfd2;padding:0 12px;border-radius:12px;margin:0 0 12px}.field:focus-within{outline:2px solid #539970}.field span{font-size:23px}.field input{border:0;min-width:0;padding:13px 4px}.field .peek{white-space:nowrap;flex:none;width:auto;padding:8px;font-size:12px}.primary{border-radius:40px}.link{margin-top:7px}.identity{display:flex;align-items:center;gap:10px}.identity img{width:56px;border-radius:15px}.identity small{color:#46644e}
 @media (min-width:800px){
  body:has(#authView:not(.hide)){background:#edf8ef}
  .wrap:has(#authView:not(.hide)){width:100%;max-width:none;min-height:100vh;padding:0;display:grid;place-items:center}
@@ -225,7 +225,7 @@ body:has(#authView:not(.hide)){background:#edf7ef}.wrap:has(#authView:not(.hide)
 
 <!-- ========== 登录 / 注册 ========== -->
 <div id="authView">
-<div class="brand-panel"><img class="hero" src="hero.jpg" alt="道吾拾 · 知行有道，吾拾而上">
+<div class="brand-panel"><img class="hero" src="mobile-brand.jpg" alt="道吾拾 · 知行有道，吾拾而上">
 </div><div class="auth-panel"><div class="roles"><button aria-pressed="true" onclick="pickRole('student')"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><path d="m2 8 10-5 10 5-10 5zM6 10v6q6 5 12 0v-6M22 8v7"/></svg>　学生登录</button><button aria-pressed="false" onclick="pickRole('teacher')"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><circle cx="12" cy="7" r="4"/><path d="M3 21v-2a9 7 0 0 1 18 0v2z"/></svg>　教师登录</button></div>
 <form class="card" id="loginBox" onsubmit="event.preventDefault();doLogin()">
 <label class="field"><span aria-hidden="true"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><circle cx="12" cy="7" r="4"/><path d="M3 21v-2a9 7 0 0 1 18 0v2z"/></svg></span><input id="lgUser" aria-label="登录账号" placeholder="请输入学习代号" autocomplete="username"></label>
